@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <h1>Xabar yuborish</h1>
+
+        <input type="text" placeholder="Mavzu yozin" name="subject">
+        <br><br><textarea name="text" placeholder="Matn yozing"></textarea>
+        <br><br><input type="email" name="email" placeholder="Kimga yubormoqchisiz">
+        <br><br><button type="submit"><br>Yuborish</button>
+    </form>
+</body>
+
+</html>
