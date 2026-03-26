@@ -119,6 +119,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # This is a list of additional directories where Django will look for static files 
 # during development (and for collectstatic to copy from).
+STATIC_URL = 'static/'
 if DEBUG:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, "static"),
